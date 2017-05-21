@@ -29,7 +29,7 @@ window.onload = function() {
     drawEverything();
   }, 1000 / framesPerSecond);
 
-  canvas.addEventListener('mousemove',
+  canvas.addEventListener('touchmove',
     function(evt) {
       var mousePos = calcMousePosition(evt);
       paddleOneY = mousePos.y - (PADDLE_HEIGHT/2);
